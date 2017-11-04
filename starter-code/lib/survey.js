@@ -15,7 +15,7 @@ console.log(randomSurvey());
 
 function tenRandom() {
   newArray = [];
-  for (i = 0; i < 10; i++) {
+  for (var i = 0; i < 10; i++) {
     newArray.push(responses[randomSurvey()]);
   }
   return newArray;
@@ -27,8 +27,9 @@ function tenRandom() {
 
 function survey(){
   surveyDepartments = [];
-  for (i = 0; i < 5; i++) {
+  for (var i = 0; i < 5; i++) {
     console.log(i);
+    surveyDepartments.push(tenRandom);
     surveyDepartments[i] = tenRandom();
     //console.log(surveyDepartments[i]);
   }
