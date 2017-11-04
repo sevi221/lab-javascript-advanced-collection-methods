@@ -8,15 +8,13 @@ var birthdays = ["Severus Snape", "9 January", "Arthur Weasley", "6 February",
                   "4 October", "Filius Flitwick", "17 October", "Molly Weasley",
                   "30 October", "Bill Weasley", "29 November", "Rubeus Hagrid",
                   "6 December", "Charlie Weasley", "12 December"];
+
 var birthdaysOk = [];
-   for(var i = 0; i < birthdays.length/2; i++){
-   birthdaysOk[i]=[birthdays[i*2], birthdays[i*2+1]];
 
+function birthdaysHarryPotter(array) {
+   for(var i = 0; i < array.length/2; i++){
+   birthdaysOk[i]=[array[i*2], array[i*2+1]];
 }
-console.log(birthdaysOk);
-
-
-
-//crear la función y añadir: 
-
-var moreBirthdays = [ "Lily Evans", "30 January", "James Potter", "27 March","Dudley Dursley", "30 June", "Tom Riddle", "31 December" ];
+  return birthdaysOk;
+}
+console.log(birthdaysHarryPotter(birthdays));

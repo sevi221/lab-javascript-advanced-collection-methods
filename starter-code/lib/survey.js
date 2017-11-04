@@ -9,7 +9,7 @@ var responses = [
 function randomSurvey() {
   return Math.floor(Math.random() * responses.length);
 }
-console.log(randomSurvey());
+//console.log(randomSurvey());
 
 
 
@@ -21,19 +21,18 @@ function tenRandom() {
   return newArray;
 }
 
-//var surveyDepartments = [tenRandom(), tenRandom(), tenRandom(), tenRandom(), tenRandom()];
-//console.log(surveyDepartments);
-
-
-function survey(){
+//5 department survey answer arrays.
+function employeeSatisfaction() {
   surveyDepartments = [];
   for (var i = 0; i < 5; i++) {
-    console.log(i);
+    //console.log(i);
     surveyDepartments.push(tenRandom);
     surveyDepartments[i] = tenRandom();
-    //console.log(surveyDepartments[i]);
+
   }
   return surveyDepartments;
 }
+
+console.log(employeeSatisfaction());
 
 console.log(survey());
